@@ -17,6 +17,7 @@ function App() {
     <Router>
       <Routes>
         <Route exact  path='/' element={<Home/>} />
+        <Route path='/product/' element={<ProductList />} />
         <Route path='/product/:category' element={<ProductList />} />
         <Route path='/product/:id' element={<Product />} />
         <Route path='/register' element={user ? <Navigate to='/' /> : <Register />} />
@@ -29,4 +30,3 @@ function App() {
 }
 
 export default App
-
