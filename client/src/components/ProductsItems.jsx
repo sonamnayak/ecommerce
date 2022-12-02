@@ -5,8 +5,7 @@ import {AiOutlineHeart, AiOutlineSearch} from 'react-icons/ai'
 import {BsCart2} from 'react-icons/bs'
 
 const Product = styled.div`
-    height: 40vh;
-    /* background-color: #e9f8f4; */
+    height: 55vh;
     background-color: #f2e6d2;
     position: relative;
     display: flex;
@@ -20,8 +19,8 @@ const ImgContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%;
-    height: 80%;
+    width: 75%;
+    height: 85%;
 `
 
 const Image = styled.img`
@@ -29,25 +28,6 @@ const Image = styled.img`
     height: 100%;
     object-fit: cover;
 `
-
-// const CirContainer = styled.div`
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     height: 100%;
-//     position: absolute;
-// `
-
-// const Circle = styled.div`
-//     background-color: white;
-//     border-radius: 50%;
-//     z-index: 2;
-//     width: 80%;
-//     height: 80%;
-// `
 
 const Icons = styled.div`
     display: flex;
@@ -83,7 +63,7 @@ const IconItems = styled.div`
 `
 
 const StyledLink = styled(Link)`
-  color: white;
+  color: black;
   text-decoration: none;
   &:focus, &:hover, &:visited, &:link, &:active {
     text-decoration: none;
@@ -96,9 +76,6 @@ const ProductsItems = ({item}) => {
         <ImgContainer>
             <Image src={item.img} />
         </ImgContainer>
-        {/* <CirContainer>
-            <Circle />
-        </CirContainer> */}
         <Icons>
             <IconItems><BsCart2 size={24}/></IconItems>
             <StyledLink to = {`/product/${item._id}`}>
